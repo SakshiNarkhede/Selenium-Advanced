@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-04T04:52:52Z" name="Suite" finished-at="2022-08-04T04:53:26Z" duration-ms="34155">
+    <groups>
+    </groups>
+    <test started-at="2022-08-04T04:52:52Z" name="MacOS Test" finished-at="2022-08-04T04:53:18Z" duration-ms="25669">
+      <class name="lambdatest.LambdaTest">
+        <test-method is-config="true" signature="setUpClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:lambdatest.LambdaTest@10d68fcd]" started-at="2022-08-04T04:52:52Z" name="setUpClass" finished-at="2022-08-04T04:53:05Z" duration-ms="12938" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[87.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS Sierra]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="testScenarioOne()[pri:0, instance:lambdatest.LambdaTest@10d68fcd]" started-at="2022-08-04T04:53:05Z" name="testScenarioOne" finished-at="2022-08-04T04:53:18Z" duration-ms="12369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScenarioOne -->
+        <test-method is-config="true" signature="close()[pri:0, instance:lambdatest.LambdaTest@10d68fcd]" started-at="2022-08-04T04:53:18Z" name="close" finished-at="2022-08-04T04:53:18Z" duration-ms="332" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Unable to find the session info for particular sessionId 14079294d1fb2660de565cd5a6ae73fc, maybe session has quit already or timed out.
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'LAPTOP-5F0AKJ4H', ip: '192.168.29.87', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 87.0.664.41, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:50771}, msedge: {msedgedriverVersion: 87.0.669.0 (9e7154764c4ca8c..., userDataDir: /var/folders/qq/vnv9tm6922q...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 14079294d1fb2660de565cd5a6a...}
+Session ID: 14079294d1fb2660de565cd5a6ae73fc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId 14079294d1fb2660de565cd5a6ae73fc, maybe session has quit already or timed out.
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'LAPTOP-5F0AKJ4H', ip: '192.168.29.87', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 87.0.664.41, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:50771}, msedge: {msedgedriverVersion: 87.0.669.0 (9e7154764c4ca8c..., userDataDir: /var/folders/qq/vnv9tm6922q...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 14079294d1fb2660de565cd5a6a...}
+Session ID: 14079294d1fb2660de565cd5a6ae73fc
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:448)
+at lambdatest.LambdaTest.close(LambdaTest.java:168)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- lambdatest.LambdaTest -->
+    </test> <!-- MacOS Test -->
+    <test started-at="2022-08-04T04:52:52Z" name="Windows 10 Test" finished-at="2022-08-04T04:53:26Z" duration-ms="34155">
+      <class name="lambdatest.LambdaTest">
+        <test-method is-config="true" signature="setUpClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:lambdatest.LambdaTest@75db5df9]" started-at="2022-08-04T04:52:52Z" name="setUpClass" finished-at="2022-08-04T04:53:05Z" duration-ms="12938" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[86.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="testScenarioOne()[pri:0, instance:lambdatest.LambdaTest@75db5df9]" started-at="2022-08-04T04:53:05Z" name="testScenarioOne" finished-at="2022-08-04T04:53:26Z" duration-ms="20886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScenarioOne -->
+        <test-method is-config="true" signature="close()[pri:0, instance:lambdatest.LambdaTest@75db5df9]" started-at="2022-08-04T04:53:26Z" name="close" finished-at="2022-08-04T04:53:26Z" duration-ms="300" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Unable to find the session info for particular sessionId 6f4d86330ac749be7b1f547bfb764350, maybe session has quit already or timed out.
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'LAPTOP-5F0AKJ4H', ip: '192.168.29.87', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.30, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 6f4d86330ac749be7b1f547bfb7...}
+Session ID: 6f4d86330ac749be7b1f547bfb764350]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId 6f4d86330ac749be7b1f547bfb764350, maybe session has quit already or timed out.
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'LAPTOP-5F0AKJ4H', ip: '192.168.29.87', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.30, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 6f4d86330ac749be7b1f547bfb7...}
+Session ID: 6f4d86330ac749be7b1f547bfb764350
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:448)
+at lambdatest.LambdaTest.close(LambdaTest.java:168)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- lambdatest.LambdaTest -->
+    </test> <!-- Windows 10 Test -->
+  </suite> <!-- Suite -->
+</testng-results>
