@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 24.383 s <<< FAILURE! - in TestSuite
+close(lambdatest.LambdaTest)  Time elapsed: 8.882 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Unable to find the session info for particular sessionId af77c506321f90f75cf6b08cb17df80e, maybe session has quit already or timed out.
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'sakshinarkh-seleniumadv-mfk3448h1sz', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-43-generic', java.version: '11.0.15'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 87.0.664.41, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:55849}, msedge: {msedgedriverVersion: 87.0.669.0 (9e7154764c4ca8c..., userDataDir: /var/folders/nl/mnqgh0js2xb...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: af77c506321f90f75cf6b08cb17...}
+Session ID: af77c506321f90f75cf6b08cb17df80e
+	at lambdatest.LambdaTest.close(LambdaTest.java:168)
+
+close(lambdatest.LambdaTest)  Time elapsed: 12.889 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Unable to find the session info for particular sessionId 05f716f7d50594fb9fef4c5249107c00, maybe session has quit already or timed out.
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'sakshinarkh-seleniumadv-mfk3448h1sz', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-43-generic', java.version: '11.0.15'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.30, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55412}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 05f716f7d50594fb9fef4c52491...}
+Session ID: 05f716f7d50594fb9fef4c5249107c00
+	at lambdatest.LambdaTest.close(LambdaTest.java:168)
+
